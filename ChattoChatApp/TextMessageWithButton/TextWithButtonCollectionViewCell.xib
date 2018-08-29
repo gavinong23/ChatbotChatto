@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="shx-MN-blY" customClass="TextWithButtonCollectionViewCell" customModule="ChattoChatApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="247" height="132"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="247" height="132"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I9o-Kz-Sx6">
+                        <rect key="frame" x="5" y="5" width="237" height="122"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Hor-0M-ePx">
+                                <rect key="frame" x="0.0" y="0.0" width="237" height="122"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQ6-8N-fQR">
+                                        <rect key="frame" x="0.0" y="0.0" width="237" height="72"/>
+                                        <color key="backgroundColor" red="1" green="0.98337477668818696" blue="0.65089731668726492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cFa-N1-BAM">
+                                        <rect key="frame" x="0.0" y="72" width="237" height="50"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gmB-kq-LOA">
+                                                <rect key="frame" x="0.0" y="0.0" width="237" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldJ-kT-PVP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="116" height="50"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="YES">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jP-z1-qEQ">
+                                                        <rect key="frame" x="121" y="0.0" width="116" height="50"/>
+                                                        <color key="backgroundColor" red="0.00039378106729999999" green="0.49445439029999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="NO">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="gmB-kq-LOA" secondAttribute="bottom" id="HnK-7l-HaI"/>
+                                            <constraint firstAttribute="trailing" secondItem="gmB-kq-LOA" secondAttribute="trailing" id="ZMk-AR-A8s"/>
+                                            <constraint firstItem="gmB-kq-LOA" firstAttribute="top" secondItem="cFa-N1-BAM" secondAttribute="top" id="fFP-Dk-tPr"/>
+                                            <constraint firstItem="gmB-kq-LOA" firstAttribute="leading" secondItem="cFa-N1-BAM" secondAttribute="leading" id="uXn-FF-3KK"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hor-0M-ePx" firstAttribute="leading" secondItem="I9o-Kz-Sx6" secondAttribute="leading" id="AjQ-Mi-XYw"/>
+                            <constraint firstAttribute="bottom" secondItem="Hor-0M-ePx" secondAttribute="bottom" id="ONK-zZ-mXe"/>
+                            <constraint firstItem="Hor-0M-ePx" firstAttribute="top" secondItem="I9o-Kz-Sx6" secondAttribute="top" id="St8-sh-OrS"/>
+                            <constraint firstAttribute="trailing" secondItem="Hor-0M-ePx" secondAttribute="trailing" id="hj5-zy-s2z"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="I9o-Kz-Sx6" firstAttribute="leading" secondItem="shx-MN-blY" secondAttribute="leading" constant="5" id="0Ws-Jo-KgC"/>
+                <constraint firstAttribute="bottom" secondItem="I9o-Kz-Sx6" secondAttribute="bottom" constant="5" id="GuT-Lk-DRz"/>
+                <constraint firstAttribute="trailing" secondItem="I9o-Kz-Sx6" secondAttribute="trailing" constant="5" id="KGc-EO-992"/>
+                <constraint firstItem="I9o-Kz-Sx6" firstAttribute="top" secondItem="shx-MN-blY" secondAttribute="top" constant="5" id="Wpd-2O-XMi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="h5a-ca-EF8"/>
+            <size key="customSize" width="247" height="132"/>
+            <connections>
+                <outlet property="buttonContainerView" destination="cFa-N1-BAM" id="t53-Q1-wvE"/>
+                <outlet property="buttonStackView" destination="gmB-kq-LOA" id="pVo-aI-tWM"/>
+                <outlet property="containerLeading" destination="0Ws-Jo-KgC" id="ctk-e4-Rb2"/>
+                <outlet property="containerTrailing" destination="KGc-EO-992" id="Poh-m6-CgF"/>
+                <outlet property="messageTextView" destination="PQ6-8N-fQR" id="buX-F7-gaa"/>
+            </connections>
+            <point key="canvasLocation" x="161.5" y="128"/>
+        </collectionViewCell>
+    </objects>
+</document>
