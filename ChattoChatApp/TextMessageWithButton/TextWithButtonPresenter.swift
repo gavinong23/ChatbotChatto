@@ -84,7 +84,7 @@ class TextWithButtonPresenter: ChatItemPresenterProtocol {
         
         let quantityOfButton = 2
         
-        let textHeight = self.textWithButtonModel.text.height(withConstrainedWidth: width / 1.5, font: UIFont.systemFont(ofSize: 18)) 
+        let textHeight = self.textWithButtonModel.text.height(withConstrainedWidth: width / 1.5, font: UIFont.systemFont(ofSize: 18))  + 50
         
     
 

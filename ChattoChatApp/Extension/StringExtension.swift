@@ -24,13 +24,13 @@ extension String {
         return ceil(boundingBox.width)
     }
     
-    func buttonHeight(buttonQuantity: Int, withConstrainedWidth width: CGFloat, font: UIFont) -> CGFloat{
-        
-        let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
-        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [kCTFontAttributeName as NSAttributedStringKey: font], context: nil)
-        
-        return ceil(boundingBox.height) + buttonQuantity / 2 * 80
-        
-        
-    }
+//    func buttonHeight(buttonQuantity: Int, withConstrainedWidth width: CGFloat, font: UIFont) -> CGFloat{
+//        
+//        let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
+//        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [kCTFontAttributeName as NSAttributedStringKey: font], context: nil)
+//        
+//        return ceil(boundingBox.height) + buttonQuantity / 2 * 80
+//        
+//        
+//    }
 }
